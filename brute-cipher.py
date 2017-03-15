@@ -1,18 +1,10 @@
 # Caesar Cipher Hacker
 
-# http://inventwithpython.com/hacking (BSD Licensed)
-
-# message = 'KHOOR ZRUOG'
-message = input('\nCAESAR CIPHER BRUTE FORCE\n==========================\nmasukkan string yang mau di decript\n>').upper()
+message = input('\nCAESAR CIPHER BRUTE FORCE\n==========================\nmasukkan cipher text yang mau di decript\n>').upper()
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-# loop through every possible key
-for key in range(len(LETTERS)):
-    # It is important to set translated to the blank string so that the
-    # previous iteration's value for translated is clear
-    translated = ''
 
-    # The rest of the program is the same as the original Caesar program:
-    # run the encryption/decryption code on each symbol in the message
+for key in range(len(LETTERS)):
+    translated = ''
 
     for symbol in message:
         if symbol in LETTERS:
