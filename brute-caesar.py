@@ -1,7 +1,7 @@
 # Caesar Cipher Hacker
 
-message = input('\nCAESAR CIPHER BRUTE FORCE\n==========================\nmasukkan cipher text yang mau di decript\n>').upper()
-LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+message = input('\nCAESAR CIPHER BRUTE FORCE\n==========================\nmasukkan cipher text yang mau di decript\n>').lower()
+LETTERS = 'abcdefghijklmnopqrstuvwxyz'
 
 for key in range(len(LETTERS)):
     translated = ''
